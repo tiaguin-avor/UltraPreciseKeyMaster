@@ -67,14 +67,18 @@ And replace all instances of:
 ...
 SendInput, {e up}`
 With your desired key, such as `{a down} / {a up}`.
-License
+
+##License
+
 This project is licensed under the GNU General Public License v3.0.
 See [LICENSE](https://github.com/SIGMAT3CH/UltraPreciseKeyMaster/blob/main/LICENSE) for more information.
 
-Disclaimer
+##Disclaimer
+
 This script is provided as-is, with no warranty. While designed for maximum accuracy, results may vary depending on your hardware, OS version, and background processes.
 
-Support
+##Support
+
 For questions or improvements, feel free to contribute or open an issue.
 
 Happy scripting!
