@@ -1,0 +1,22 @@
+name: "Feature Request"
+description: "Suggest a new feature or improvement"
+title: "[Feature] <your-feature-title>"
+labels: [enhancement]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: "Describe the feature"
+      description: "What do you want added or improved?"
+      placeholder: "I'd like the script to..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: motivation
+    attributes:
+      label: "Why is this needed?"
+      description: "Explain why this would be useful."
+      placeholder: "This would help because..."
+    validations:
+      required: true
