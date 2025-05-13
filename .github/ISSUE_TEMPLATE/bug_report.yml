@@ -1,0 +1,80 @@
+name: "Bug Report"
+description: "Report something that isn't working as expected"
+title: "[Bug] <short-description>"
+labels: [bug]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: "What happened?"
+      description: "Clearly describe the problem you experienced."
+      placeholder: "When I press F1, nothing happens..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: "What did you expect to happen?"
+      placeholder: "I expected the script to toggle on and show a popup."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: "Steps to reproduce"
+      description: "Tell us how to trigger the issue step-by-step."
+      placeholder: |
+        1. Launch script
+        2. Press F1
+        3. Observe no tooltip
+    validations:
+      required: false
+- type: dropdown
+  id: ahk-version
+  attributes:
+    label: "Which version of AutoHotkey are you using?"
+    description: "Pick the version of AHK you're running the script with."
+    options:
+      - AutoHotkey v2
+      - AutoHotkey v1.1
+      - I'm not sure
+      - Other (please specify below)
+    default: 0
+  validations:
+    required: true
+
+- type: input
+  id: ahk-version-other
+  attributes:
+    label: "If 'Other', please specify"
+    placeholder: "e.g., AutoHotkey_H v2.1-beta"
+
+  - type: dropdown
+  id: platform
+  attributes:
+    label: "What version of Windows are you using?"
+    description: "Select the main version you're using or testing on."
+    options:
+      - Windows 11
+      - Windows 10
+      - Windows 8.1 or older
+      - Other (please specify below)
+    default: 0
+  validations:
+    required: true
+
+- type: input
+  id: platform-other
+  attributes:
+    label: "If 'Other', please specify"
+    placeholder: "e.g., Windows Server 2022"
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: "Additional context or logs"
+      description: "Paste any error messages or screenshots that might help."
+    validations:
+      required: false
