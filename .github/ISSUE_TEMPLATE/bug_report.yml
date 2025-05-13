@@ -1,80 +1,83 @@
 name: "Bug Report"
-description: "Report something that isn't working as expected"
-title: "[Bug] <short-description>"
-labels: [bug]
+description: "Report a reproducible bug in UltraPreciseKeyMaster"
+title: "[Bug] <describe-the-problem>"
+labels: ["bug"]
+assignees: []
 body:
-  - type: textarea
-    id: what-happened
+  - type: markdown
     attributes:
-      label: "What happened?"
-      description: "Clearly describe the problem you experienced."
-      placeholder: "When I press F1, nothing happens..."
-    validations:
-      required: true
+      value: |
+        Thanks for reporting a bug! Please fill out this form completely so we can help fix it quickly.
 
-  - type: textarea
-    id: expected-behavior
+  - type: input
+    id: bug-summary
     attributes:
-      label: "What did you expect to happen?"
-      placeholder: "I expected the script to toggle on and show a popup."
+      label: "Brief Summary"
+      placeholder: "e.g., Key not releasing after hold"
     validations:
       required: true
 
   - type: textarea
     id: steps-to-reproduce
     attributes:
-      label: "Steps to reproduce"
-      description: "Tell us how to trigger the issue step-by-step."
+      label: "Steps to Reproduce"
+      description: "Describe what you did to trigger the bug."
       placeholder: |
-        1. Launch script
-        2. Press F1
-        3. Observe no tooltip
+        1. Start the script
+        2. Hold `E`
+        3. Notice that the key doesn't release
+      render: markdown
     validations:
-      required: false
-- type: dropdown
-  id: ahk-version
-  attributes:
-    label: "Which version of AutoHotkey are you using?"
-    description: "Pick the version of AHK you're running the script with."
-    options:
-      - AutoHotkey v2
-      - AutoHotkey v1.1
-      - I'm not sure
-      - Other (please specify below)
-    default: 0
-  validations:
-    required: true
-
-- type: input
-  id: ahk-version-other
-  attributes:
-    label: "If 'Other', please specify"
-    placeholder: "e.g., AutoHotkey_H v2.1-beta"
-
-  - type: dropdown
-  id: platform
-  attributes:
-    label: "What version of Windows are you using?"
-    description: "Select the main version you're using or testing on."
-    options:
-      - Windows 11
-      - Windows 10
-      - Windows 8.1 or older
-      - Other (please specify below)
-    default: 0
-  validations:
-    required: true
-
-- type: input
-  id: platform-other
-  attributes:
-    label: "If 'Other', please specify"
-    placeholder: "e.g., Windows Server 2022"
+      required: true
 
   - type: textarea
-    id: extra
+    id: expected-behavior
     attributes:
-      label: "Additional context or logs"
-      description: "Paste any error messages or screenshots that might help."
+      label: "Expected Behavior"
+      description: "What should have happened?"
+      placeholder: "The key should release after the set hold time."
     validations:
-      required: false
+      required: true
+
+  - type: dropdown
+    id: ahk-version
+    attributes:
+      label: "AutoHotkey Version"
+      options:
+        - "AutoHotkey v2"
+        - "AutoHotkey v1.1"
+        - "I'm not sure"
+        - "Other (please specify below)"
+    validations:
+      required: true
+
+  - type: input
+    id: ahk-version-other
+    attributes:
+      label: "If 'Other', specify the AHK version"
+      placeholder: "e.g., AutoHotkey_H v2.1-beta"
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: "Operating System"
+      options:
+        - "Windows 11"
+        - "Windows 10"
+        - "Windows 8.1 or older"
+        - "Other (please specify below)"
+    validations:
+      required: true
+
+  - type: input
+    id: platform-other
+    attributes:
+      label: "If 'Other', specify your OS"
+      placeholder: "e.g., Windows Server 2022"
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: "Additional Notes / Logs"
+      description: "Any error messages, screenshots, or observations?"
+      placeholder: "Paste logs, screenshots, or relevant comments here."
