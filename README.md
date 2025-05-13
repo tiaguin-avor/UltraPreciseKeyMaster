@@ -59,14 +59,10 @@
 
 To change the key being simulated (default: `e`), edit these lines:
 
-ahk
-`Hotkey, *e, CustomE, On
-Hotkey, *e Up, CustomE_Up, On`
+`Hotkey, *e, CustomE, On Hotkey, *e Up, CustomE_Up, On`
+
 And replace all instances of:
-`SendInput, {e down}
-...
-SendInput, {e up}`
-With your desired key, such as `{a down} / {a up}`.
+`SendInput, {e down}...SendInput, {e up}` With your desired key, such as `{a down} / {a up}`.
 
 ## License
 
