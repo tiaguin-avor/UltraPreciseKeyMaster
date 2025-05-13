@@ -9,7 +9,7 @@ body:
       value: |
         Thanks for reporting a bug! Please fill out this form completely so we can help fix it quickly.
 
-  - type: input
+  - type: textarea
     id: bug-summary
     attributes:
       label: "Brief Summary"
