@@ -12,13 +12,13 @@
 
 ## Features
 
-- 🔄 **Realtime Process Priority** – Ensures the script runs with maximum CPU priority.
-- 🧠 **Advanced Calibration System** – Measures system overhead using statistical filtering and outlier rejection.
-- 🛠 **Dynamic Timing Adjustment** – Adjusts key hold duration based on real-world timing deviations.
-- 🧪 **Timing Diagnostics** – Visual feedback for timing accuracy and adjustments.
-- 🔧 **Customizable Hold Time** – Modify key hold duration live via hotkeys or precise input.
-- 🔁 **Auto Recalibration** – Periodically recalibrates to maintain accuracy during long runtimes.
-- ⚡ **Spinlock Precision Sleep** – Avoids delays from standard sleep methods with tight timing loops.
+- **Realtime Process Priority** – Ensures the script runs with maximum CPU priority.
+- **Advanced Calibration System** – Measures system overhead using statistical filtering and outlier rejection.
+- **Dynamic Timing Adjustment** – Adjusts key hold duration based on real-world timing deviations.
+- **Timing Diagnostics** – Visual feedback for timing accuracy and adjustments.
+- **Customizable Hold Time** – Modify key hold duration live via hotkeys or precise input.
+- **Auto Recalibration** – Periodically recalibrates to maintain accuracy during long runtimes.
+-  **Spinlock Precision Sleep** – Avoids delays from standard sleep methods with tight timing loops.
 
 ---
 
@@ -59,6 +59,23 @@
 
 To change the key being simulated (default: `e`), edit these lines:
 
-```ahk
-Hotkey, *e, CustomE, On
-Hotkey, *e Up, CustomE_Up, On
+ahk
+`Hotkey, *e, CustomE, On
+Hotkey, *e Up, CustomE_Up, On`
+And replace all instances of:
+`SendInput, {e down}
+...
+SendInput, {e up}`
+With your desired key, such as `{a down} / {a up}`.
+License
+This project is licensed under the GNU General Public License v3.0.
+See [LICENSE](https://github.com/SIGMAT3CH/UltraPreciseKeyMaster/blob/main/LICENSE) for more information.
+
+Disclaimer
+This script is provided as-is, with no warranty. While designed for maximum accuracy, results may vary depending on your hardware, OS version, and background processes.
+
+Support
+For questions or improvements, feel free to contribute or open an issue.
+
+Happy scripting!
+— SIGMAT3CH
